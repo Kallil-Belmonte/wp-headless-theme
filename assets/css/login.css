@@ -1,0 +1,115 @@
+@import "./_shared/variables.css";
+@import "./_shared/general.css";
+
+/*==============================
+BACKGROUND
+==============================*/
+
+body {
+  background-color: var(--login-bg-color);
+}
+
+/*==============================
+FORM
+==============================*/
+
+/* LOGO */
+
+a:focus {
+  box-shadow: none;
+}
+
+.login h1 a {
+  /* background-image: url("../img/"); */
+}
+
+/* MESSAGE */
+
+.login .message,
+.login .success {
+  border-radius: var(--border-radius);
+  background-color: var(--message-bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.login #login_error {
+  border-left-color: var(--danger);
+}
+
+/* FORM */
+
+#login {
+  width: var(--login-form-width);
+}
+
+.login form {
+  background: var(--login-form-bg-color);
+  border: none;
+  border-radius: var(--border-radius-medium);
+  padding: 40px 50px;
+  box-shadow: var(--box-shadow);
+}
+
+/* INPUTS */
+
+.login form .input,
+.login input[type="password"],
+.login input[type="text"] {
+  font-size: var(--font-size);
+}
+
+.login form .input,
+.login form input[type="checkbox"],
+.login input[type="text"] {
+  background: transparent;
+}
+
+/* EYE ICON */
+
+.login .button.wp-hide-pw .dashicons {
+  color: var(--primary);
+}
+
+.login .button.wp-hide-pw:focus {
+  border-color: var(--primary);
+  box-shadow: none;
+  outline: none;
+}
+
+/* BUTTON */
+
+.wp-core-ui .button-primary {
+  width: 100%;
+  background: var(--primary);
+  border-color: var(--primary);
+  border-radius: 50px;
+  margin-top: 20px;
+  transition: var(--transition);
+}
+
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary:hover {
+  background: var(--primary-darker);
+  border-color: var(--primary-darker);
+}
+
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:focus {
+  box-shadow: none;
+}
+
+/* LINKS */
+
+.login #backtoblog a,
+.login #nav a {
+  color: #646e79;
+  transition: var(--transition);
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.login h1 a:hover {
+  color: var(--primary-darker);
+}

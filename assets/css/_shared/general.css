@@ -1,0 +1,67 @@
+@import "./variables.css";
+
+/* https://materialdesignicons.com/ */
+/* https://glyphter.com/ */
+
+@font-face {
+  font-family: "Glyphter";
+  src: url("../../fonts/glyphter/Glyphter.eot");
+  src: url("../../fonts/glyphter/Glyphter.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/glyphter/Glyphter.woff") format("woff"),
+    url("../../fonts/glyphter/Glyphter.ttf") format("truetype"),
+    url("../../fonts/glyphter/Glyphter.svg#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  color: var(--text-color);
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select,
+textarea {
+  font-size: 14px;
+  border: 1px solid var(--input);
+  transition: all 0.4s ease;
+}
+
+input[type="checkbox"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="datetime"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="radio"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--input-focus);
+  box-shadow: none;
+  outline: none;
+}

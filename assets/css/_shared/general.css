@@ -20,6 +20,17 @@ body {
   color: var(--text-color);
 }
 
+.wp-person a:focus .gravatar,
+a:focus,
+a:focus .media-icon img {
+  box-shadow: none;
+  outline: none;
+}
+
+/*==============================
+INPUTS
+==============================*/
+
 input[type="checkbox"],
 input[type="radio"],
 input[type="color"],
@@ -64,4 +75,162 @@ textarea:focus {
   border-color: var(--input-focus);
   box-shadow: none;
   outline: none;
+}
+
+/*==============================
+BUTTONS
+==============================*/
+
+/* ADD NEW */
+
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+  color: var(--btn-primary-bg-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--btn-primary-bg-color);
+  background: var(--btn-secondary-bg-color);
+  transition: var(--transition);
+}
+
+.wrap .add-new-h2:hover,
+.wrap .page-title-action:hover,
+.wrap .page-title-action:focus {
+  color: var(--btn-secondary-bg-color);
+  border-color: var(--btn-primary-bg-color);
+  background: var(--btn-primary-bg-color);
+  box-shadow: none;
+}
+
+/* PRIMARY */
+
+.wp-core-ui .button-primary {
+  border-radius: var(--border-radius);
+  background: var(--btn-primary-bg-color);
+  border-color: var(--btn-primary-bg-color);
+  transition: var(--transition);
+}
+
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary.active,
+.wp-core-ui .button-primary.active:hover,
+.wp-core-ui .button-primary.active:focus,
+.wp-core-ui .button-primary:active {
+  background: var(--btn-primary-bg-color-hover);
+  border-color: var(--btn-primary-bg-color-hover);
+  box-shadow: none;
+}
+
+/* SECONDARY */
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
+  color: var(--btn-primary-bg-color);
+  border-radius: var(--border-radius);
+  background: var(--btn-secondary-bg-color);
+  border-color: var(--btn-primary-bg-color);
+  transition: var(--transition);
+}
+
+.wp-core-ui .button.hover,
+.wp-core-ui .button.focus,
+.wp-core-ui .button:hover,
+.wp-core-ui .button:focus,
+.wp-core-ui .button-secondary.hover,
+.wp-core-ui .button-secondary.focus,
+.wp-core-ui .button-secondary:hover,
+.wp-core-ui .button-secondary:focus,
+.wp-core-ui .button-secondary.active,
+.wp-core-ui .button-secondary.active:hover,
+.wp-core-ui .button-secondary.active:focus,
+.wp-core-ui .button-secondary:active {
+  color: var(--btn-secondary-bg-color);
+  background: var(--btn-primary-bg-color);
+  border-color: var(--btn-primary-bg-color);
+  box-shadow: none;
+  outline: none;
+}
+
+/*==============================
+SELECT
+==============================*/
+
+.wp-core-ui select {
+  color: var(--text-color);
+  border-color: var(--select-border-color);
+}
+
+.wp-core-ui select:hover,
+.wp-core-ui select:focus {
+  border-color: var(--select-border-color-hover);
+  box-shadow: none;
+}
+
+/*==============================
+NOTICE
+==============================*/
+
+.notice,
+div.error,
+div.updated {
+  border-radius: var(--border-radius);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left-width: 4px;
+  box-shadow: none;
+}
+
+.notice-warning {
+  border-left-color: var(--notice-warning-color);
+}
+
+/*==============================
+TABLE
+==============================*/
+
+#menu-management .menu-edit,
+#menu-settings-column .accordion-container,
+.comment-ays,
+.feature-filter,
+.imgedit-group,
+.manage-menus,
+.menu-item-handle,
+.popular-tags,
+.stuffbox,
+.widget-inside,
+.widget-top,
+.widgets-holder-wrap,
+.wp-editor-container,
+p.popular-tags,
+table.widefat {
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: none;
+}
+
+table.widefat thead td,
+table.widefat thead th {
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+table.widefat tfoot td,
+table.widefat tfoot th {
+  border-top: 1px solid var(--table-border-color);
+}
+
+table th.sortable a,
+table th.sorted a,
+table.widefat td,
+table.widefat th {
+  padding: 12px 8px;
+}
+
+.plugin-update-tr.active td,
+.plugins .active th.check-column {
+  border-left: 4px solid var(--table-border-left-color);
 }

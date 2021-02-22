@@ -2,6 +2,19 @@
 @import "./_shared/general.css";
 
 /*==============================
+CONTENT
+==============================*/
+
+body {
+  background-color: var(--content-bg-color);
+}
+
+#wpcontent,
+#wpfooter {
+  margin-left: var(--menu-width);
+}
+
+/*==============================
 MENU
 ==============================*/
 
@@ -161,6 +174,13 @@ div.wp-menu-image:before {
   content: "\0046";
 }
 
+/* UPDATE COUNT */
+
+#adminmenu .awaiting-mod,
+#adminmenu .update-plugins {
+  background-color: var(--update-count-bg-color);
+}
+
 /* SUBMENU */
 
 #adminmenu .wp-submenu {
@@ -300,12 +320,8 @@ div.wp-menu-image:before {
 }
 
 /*==============================
-CONTENT
+POST BOX
 ==============================*/
-
-body {
-  background-color: var(--content-bg-color);
-}
 
 .welcome-panel,
 .postbox {
@@ -313,11 +329,77 @@ body {
   border-radius: var(--border-radius-medium);
 }
 
+/* HEADER */
+
 .postbox-header {
   border-bottom: none;
 }
 
-#wpcontent,
-#wpfooter {
-  margin-left: var(--menu-width);
+/* METABOX HOLDER */
+
+.metabox-holder .postbox > h3,
+.metabox-holder .stuffbox > h3,
+.metabox-holder h2.hndle,
+.metabox-holder h3.hndle {
+  padding: 12px;
+}
+
+/* HANDLE ORDER */
+
+.postbox .handle-order-higher,
+.postbox .handle-order-lower {
+  transition: var(--transition);
+}
+
+.postbox .handle-order-higher[aria-disabled="false"]:hover,
+.postbox .handle-order-lower[aria-disabled="false"]:hover,
+.postbox .handle-order-higher[aria-disabled="false"]:focus,
+.postbox .handle-order-lower[aria-disabled="false"]:focus {
+  color: var(--handle-order-bg-color-hover);
+}
+
+.postbox .handle-order-higher:focus,
+.postbox .handle-order-lower:focus,
+.postbox .handlediv:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* TOGGLE INDICATOR */
+
+.postbox .toggle-indicator {
+  transition: var(--transition);
+}
+
+.postbox .toggle-indicator:hover,
+.postbox .toggle-indicator:focus {
+  color: var(--toggle-indicator-bg-color-hover);
+}
+
+/*==============================
+WP FILTER
+==============================*/
+
+.wp-filter {
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.wp-filter .filter-links .current {
+  border-bottom: 4px solid var(--filter-selected-color);
+  color: var(--filter-selected-color);
+}
+
+/*==============================
+PLUGIN CARD 
+==============================*/
+
+.plugin-card {
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.plugin-card-bottom {
+  border-top: 1px solid var(--gray-100);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }

@@ -19,9 +19,11 @@ a:focus {
   box-shadow: none;
 }
 
+/* 
 .login h1 a {
-  /* background-image: url("../img/"); */
+ background-image: url("../img/");
 }
+ */
 
 /* MESSAGE */
 
@@ -80,6 +82,7 @@ a:focus {
 
 .wp-core-ui .button-primary {
   width: 100%;
+  color: #fff;
   background: var(--primary);
   border-color: var(--primary);
   border-radius: 50px;
